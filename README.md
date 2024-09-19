@@ -1,1 +1,7 @@
 # UTS_Frontend
+
+Kelompok 7 OSHOP
+
+SACHI GRANITA       5352300XX
+NOEL LIMAN          535230067
+HENDRY              535230151
