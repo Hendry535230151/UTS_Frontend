@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Style/home.css">
+    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>
     <title>Zalora</title>
 </head>
 <body>
@@ -11,11 +12,52 @@
         <h1>ZALORA</h1>
         <nav class="navbar">
             <ul>
-                <li><a href="#Men">EXPLORE</a></li>
-                <li><a href="#Women">CART</a></li>
-                <li><a href="#Kids">WISHLIST</a></li>
+                <div class="left__container">    
+                    <li><a id="exp__nav" href="#explorer"><i class="fa-solid fa-globe"></i>EXPLORE</a></li>
+                    <li><a id="cart_nav" href="#cart"><i class="fa-solid fa-cart-shopping"></i>CART</a></li>
+                    <li><a id="wish_nav" href="#wishlist"><i class="fa-solid fa-heart"></i>WISHLIST</a></li>
+                </div>
+                <div class="right__container">
+                    <li>
+                        <form class="search__container">
+                            <input type="text" placeholder="Search...">
+                        </form>
+                    </li>
+                    <li><a id="prof_nav" href="#profile"><i class="fa-solid fa-user"></i>PROFILE</a></li>
+                </div>
             </ul>
         </nav>
     </div>
+
+    <div id="exp__container" class="hide">
+            <div class="cat__list__container">
+                <ul>
+                    <li><a href="#">Wanita</a></li>
+                    <li><a href="#">Pria</a></li>
+                    <li><a href="#">Anak</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Luxury</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Home & Lifestyle</a></li>
+                </ul>
+            </div>
+            <div class="detail__list__container">
+                <div id="cat__1">
+                    <ul>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><a href="#">Dummy <span>10k</span></a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <script src="../Script/home.js"></script>
 </body>
 </html>
