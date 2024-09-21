@@ -73,9 +73,71 @@ body {
 }
 
 
-.banner {
+.banner-men {
     margin-top: 0px;
     background-image: url('/Image/mensfashion.gif');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+
+.banner-women {
+    margin-top: 0px;
+    background-image: url('/Image/womensfashion.gif');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+.banner-kids {
+    margin-top: 0px;
+    background-image: url('/Image/kidsfashion.gif');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+.banner-sport {
+    margin-top: 0px;
+    background-image: url('/Image/sportwear.jpg');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+.banner-luxury {
+    margin-top: 0px;
+    background-image: url('/Image/luxury.jpg');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+.banner-beauty {
+    margin-top: 0px;
+    background-image: url('/Image/beauty.gif');
+    height: 27vw;
+    width: 80vw;
+    background-size: cover;
+    background-position: center;
+    padding: 60px;
+    color: #fff;
+}
+
+.banner-lifestyle {
+    margin-top: 0px;
+    background-image: url('/Image/lifestyle.gif');
     height: 27vw;
     width: 80vw;
     background-size: cover;
@@ -165,15 +227,7 @@ body {
     padding: 20px;
 }
 
-/* .product_picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60%;
-    width: 100%;
-    background-color: #000;
 
-} */
 
 .product_item {
     background-color: #fff;
