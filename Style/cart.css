@@ -88,10 +88,10 @@ body {
     appearance: none;
     border-radius: 50%;
     border: 1px solid #333;
+    transition: 0.3s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s ease-in-out;
 }
 
 .checkout__button:checked {
@@ -197,7 +197,7 @@ body {
 }
 
 .count__container input::-webkit-inner-spin-button, 
-.count__container input::-webkit-outer-spin-button  {
+.count__container input::-webkit-outer-spin-button {
     -webkit-appearance: none;
     pointer-events: none;
 }
