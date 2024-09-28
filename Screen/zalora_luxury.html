@@ -79,9 +79,10 @@
         <div class="filter_options">
             <select name="category" id="category">
                 <option value="all">All Categories</option>
-                <option value="shirts">Shirts</option>
-                <option value="pants">Pants</option>
-                <option value="shoes">Shoes</option>
+                <option value="clothing">Clothing</option>
+                <option value="footwear">Footwear</option>
+                <option value="accessories">Accessories</option>
+                <option value="bags">Bags</option>
             </select>
             <select name="price" id="price">
                 <option value="all">All Prices</option>
@@ -94,7 +95,7 @@
 </div>
     
 <div class="product_grid">
-    <div class="product_item">
+    <div class="product_item" data-category="clothing">
         <div class="product_picture">
             <a href="product_page.html?id=1">
                 <img src="/Image/casual_shirt.webp" alt="Product 1">
@@ -107,7 +108,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="clothing">
         <div class="product_picture">
             <a href="product_page.html?id=2">
                 <img src="/Image/jeans.webp" alt="Product 2">
@@ -120,7 +121,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="footwear">
         <div class="product_picture">
             <a href="product_page.html?id=3">
                 <img src="/Image/leather_boots.webp" alt="Product 3">
@@ -133,7 +134,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="footwear">
         <div class="product_picture">
             <a href="product_page.html?id=4">
                 <img src="/Image/sneakers.webp" alt="Product 4">
@@ -146,7 +147,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="clothing">
         <div class="product_picture">
             <a href="product_page.html?id=5">
                 <img src="/Image/jacket.webp" alt="Product 5">
@@ -159,7 +160,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="accessories">
         <div class="product_picture">
             <a href="product_page.html?id=6">
                 <img src="/Image/watch.webp" alt="Product 6">
@@ -172,7 +173,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="accessories">
         <div class="product_picture">
             <a href="product_page.html?id=7">
                 <img src="/Image/ring.webp" alt="Product 7">
@@ -185,7 +186,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="accessories">
         <div class="product_picture">
             <a href="product_page.html?id=8">
                 <img src="/Image/socks.webp" alt="Product 8">
@@ -198,7 +199,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="accessories">
         <div class="product_picture">
             <a href="product_page.html?id=9">
                 <img src="/Image/necklace.webp" alt="Product 9">
@@ -211,7 +212,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="bags">
         <div class="product_picture">
             <a href="product_page.html?id=10">
                 <img src="/Image/bag.webp" alt="Product 10">
@@ -224,7 +225,7 @@
         <button>Add to Cart</button>
     </div>
 
-    <div class="product_item">
+    <div class="product_item" data-category="clothing">
         <div class="product_picture">
             <a href="product_page.html?id=11">
                 <img src="/Image/skirt.webp" alt="Product 11">
@@ -236,7 +237,8 @@
         <p>Rp 300.000</p>
         <button>Add to Cart</button>
     </div>
-    <div class="product_item">
+
+    <div class="product_item" data-category="clothing">
         <div class="product_picture">
             <a href="product_page.html?id=12">
                 <img src="/Image/piyama.webp" alt="Product 12">
@@ -249,6 +251,7 @@
         <button>Add to Cart</button>
     </div>
 </div>
+
 
 <footer>
     <div class="footer__container">
@@ -299,10 +302,7 @@
         </ul>
     </div>
 </footer>
-
-    </body>
-    
-    </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/Script/etc.js"></script>
 </body>
-
 </html>
