@@ -8,6 +8,7 @@ function countProduct() {
 }
 
 function countPricePerItem() {
+    let totalPricePerItem = document.querySelectorAll('.price__container p');
     let inputField = document.querySelectorAll('.count__container input');
     inputField.forEach((input, index) => {
         let inputValue = parseInt(input.value) || 0;
@@ -19,8 +20,9 @@ function countPricePerItem() {
 function removeItem(itemElement) {
     itemElement.remove();
     countProduct();
-    countPricePerItem();
     calculateCheckedItems();
+    countPricePerItem();
+    updateEventListeners();
 }
 
 function calculateCheckedItems() {
@@ -57,9 +59,12 @@ function updateEventListeners() {
 
         minButton.onclick = function (){
             let value_1 = parseInt(inputField.value) || 1;
-            if (value_1 > 1) {
+            if (value_1 > 1 && value_1 != 1) {
                 inputField.value = value_1 - 1;
-            } else {
+            } else if (value_1 === 1) {
+                window.alert("Apa anda yakin");
+            } 
+            else {
                 removeItem(item);
             }
             countPricePerItem();
@@ -77,13 +82,9 @@ function updateEventListeners() {
             calculateCheckedItems(); 
         };
     });
-
-    if(items.length == 0) {
-        
-    }
 }
 
-updateEventListeners();
 countProduct();
+updateEventListeners();
 countPricePerItem();
 calculateCheckedItems();
