@@ -142,8 +142,81 @@ const products = {
             "/Image/socks1.webp",
             "/Image/socks2.webp"
         ]
+    },
+    "9": {
+        "title": "Necklace",
+        "price": "Rp 3.000.000",
+        "description": "A luxurious necklace made of high-quality materials for a refined look.",
+        "variation": "Gold",
+        "stars": "★★★★★",
+        "reviews": 70,
+        "images": [
+            "/Image/necklace.webp",
+            "/Image/necklace1.webp",
+            "/Image/necklace2.webp"
+        ],
+        "colors": [
+            "/Image/necklace.webp",
+            "/Image/necklace1.webp",
+            "/Image/necklace2.webp"
+        ]
+    },
+    "10": {
+        "title": "Bag",
+        "price": "Rp 1.500.000",
+        "description": "Stylish and durable bag, perfect for both casual and formal use.",
+        "variation": "Black/Brown",
+        "stars": "★★★★☆",
+        "reviews": 85,
+        "images": [
+            "/Image/bag.webp",
+            "/Image/bag1.webp",
+            "/Image/bag2.webp"
+        ],
+        "colors": [
+            "/Image/bag.webp",
+            "/Image/bag1.webp",
+            "/Image/bag2.webp"
+        ]
+    },
+    "11": {
+        "title": "Skirt",
+        "price": "Rp 300.000",
+        "description": "A fashionable skirt, perfect for formal and casual occasions.",
+        "variation": "Black/White",
+        "stars": "★★★★☆",
+        "reviews": 65,
+        "images": [
+            "/Image/skirt.webp",
+            "/Image/skirt1.webp",
+            "/Image/skirt2.webp"
+        ],
+        "colors": [
+            "/Image/skirt.webp",
+            "/Image/skirt1.webp",
+            "/Image/skirt2.webp"
+        ]
+    },
+    "12": {
+        "title": "Piyama",
+        "price": "Rp 250.000",
+        "description": "Comfortable and cozy pajamas for a good night's sleep.",
+        "variation": "Blue/Pink",
+        "stars": "★★★★☆",
+        "reviews": 50,
+        "images": [
+            "/Image/piyama.webp",
+            "/Image/piyama1.webp",
+            "/Image/piyama2.webp"
+        ],
+        "colors": [
+            "/Image/piyama.webp",
+            "/Image/piyama1.webp",
+            "/Image/piyama2.webp"
+        ]
     }
 };
+
 
 let currentSlide = 0;
 let slides;
