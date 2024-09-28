@@ -17,12 +17,3 @@ buttons.forEach((button) => {
 });
 
 
-
-    // // Ambil elemen dengan id exp__nav dan exp__container
-    // const expNav = document.getElementById('exp__nav');
-    // const expContainer = document.getElementById('exp__container');
-
-    // // Tambahkan event listener untuk mengubah class hide
-    // expNav.addEventListener('click', function() {
-    //     expContainer.classList.toggle('hide'); // toggle class hide untuk show/hide elemen
-    // });

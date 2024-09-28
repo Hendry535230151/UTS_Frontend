@@ -1,5 +1,4 @@
 let totalItemCount = document.querySelector('.item__list h3');
-let totalPricePerItem = document.querySelectorAll('.price__container p');
 
 function countProduct() {
     const item = document.querySelectorAll('.item');
@@ -8,6 +7,7 @@ function countProduct() {
 }
 
 function countPricePerItem() {
+    let totalPricePerItem = document.querySelectorAll('.price__container p');
     let inputField = document.querySelectorAll('.count__container input');
     inputField.forEach((input, index) => {
         let inputValue = parseInt(input.value) || 0;
@@ -77,10 +77,6 @@ function updateEventListeners() {
             calculateCheckedItems(); 
         };
     });
-
-    if(items.length == 0) {
-        
-    }
 }
 
 updateEventListeners();
