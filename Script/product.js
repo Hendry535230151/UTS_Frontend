@@ -12,8 +12,13 @@ function showSlide(index) {
 
 function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
-    showSlide(currentSlide);
+    showSlide(currentSlide)
 }
+
+const autoscroll = 3000;
+setInterval(()=>{
+    changeSlide(1);
+},autoscroll);
 
 function changeColor(index) {
     const colorOptions = document.querySelectorAll('.color-options img');
@@ -35,6 +40,3 @@ function addToCart() {
         alert('Please select a size before adding to cart');
     }
 }
-
-// Initialize the carousel
-showSlide(currentSlide);

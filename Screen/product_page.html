@@ -24,7 +24,7 @@
         <div class="product-images">
             <div class="carousel">
                 <div class="carousel-images">
-                    <img src="https://placehold.co/400x400" alt="Adilette Slides 1" class="active">
+                    <img src="../Image/calvin-klein.png" alt="Adilette Slides 1" class="active">
                     <img src="https://placehold.co/400x401" alt="Adilette Slides 2">
                     <img src="https://placehold.co/400x402" alt="Adilette Slides 3">
                 </div>
@@ -49,14 +49,17 @@
             <div class="size-options">
                 <h3>Ukuran</h3>
                 <select id="sizeDropdown" onchange="selectSize(this)">
-                    <option value="" disabled selected>Pilih Ukuran</option>
+                    <option value="" disabled selected>Select Size</option>
                     <option value="36.7">36.7</option>
                     <option value="38">38</option>
                     <option value="39.3">39.3</option>
                     <option value="40.7">40.7</option>
                 </select>
             </div>
-            <button class="add-to-cart" onclick="addToCart()">Masukkan ke Tas</button>
+            <div class="leftright">
+                <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
+                <button class="add-to-cart" onclick="addToCart()">Buy Now</button>
+            </div>
         </div>
     </div>
 <script src="../Script/product.js"></script>
