@@ -1,5 +1,4 @@
 let totalItemCount = document.querySelector('.item__list h3');
-let totalPricePerItem = document.querySelectorAll('.price__container p');
 
 function countProduct() {
     const item = document.querySelectorAll('.item');
