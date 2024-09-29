@@ -4,60 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Style/home.css">
-    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>
-    <title>Zalora</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <div class="navbar__container">
-        <h1>ZALORA</h1>
-        <nav class="navbar">
-            <ul>
-                <div class="left__container">    
-                    <li><a id="exp__nav" href="#explorer"><i class="fa-solid fa-globe"></i>EXPLORE</a></li>
-                    <li><a id="cart_nav" href="#cart"><i class="fa-solid fa-cart-shopping"></i>CART</a></li>
-                    <li><a id="wish_nav" href="#wishlist"><i class="fa-solid fa-heart"></i>WISHLIST</a></li>
+    
+    <div class="main__container">
+        <div class="navbar__max">
+            <div class="navbar">
+                <h1>Zalora</h1>
+                <div class="navbar__position">
+                    <div class="left__navbar">
+                        <button id="exploreButton">Explore<i class="fa-solid fa-caret-down"></i></button>
+                        <button onclick="window.location.href='cart.html';">Cart</button> 
+                    </div>
+                    <div class="right__navbar">
+                        <input type="text">
+                        <button>Profile</button>
+                    </div>
                 </div>
-                <div class="right__container">
-                    <li>
-                        <form class="search__container">
-                            <input type="text" placeholder="Search...">
-                        </form>
-                    </li>
-                    <li><a id="prof_nav" href="#profile"><i class="fa-solid fa-user"></i>PROFILE</a></li>
-                </div>
-            </ul>
-        </nav>
-    </div>
-
-    <div id="exp__container" class="hide">
-            <div class="cat__list__container">
-                <ul>
-                    <li><a href="#">Wanita</a></li>
-                    <li><a href="#">Pria</a></li>
-                    <li><a href="#">Anak</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Luxury</a></li>
-                    <li><a href="#">Beauty</a></li>
-                    <li><a href="#">Home & Lifestyle</a></li>
-                </ul>
             </div>
-            <div class="detail__list__container">
-                <div id="cat__1">
+        </div>
+        <div class="category__max">
+            <div class="category">
+                <div id="categoryBox" class="category__box hide">
+                    <div class="category__main__cat">
+                        <ul>
+                            <li><button href="">Beauty</button></li>
+                            <li><button href="">Lifestyle</button></li>
+                            <li><button href="">Luxury</button></li>
+                            <li><button href="">Sport</button></li>
+                            <li><button href="">Men</button></li>
+                            <li><button href="">Women</button></li>
+                            <li><button href="">Kids</button></li>
+                        </ul>
+                    </div>
+                    <div class="category__sub__cat">
+                        <div class="category__sub__beauty">
+                            <ul>
+                                <li><a href="">Make Up</a></li>
+                                <li><a href="">Face Cream</a></li>
+                                <li><a href="">Lipstick</a></li>
+                            </ul>
+                        </div>
+                        <div class="category__sub__ls hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="category__sub__luxury hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="category__sub__sport hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="category__sub__men hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>    
+                        </div>
+                        <div class="category__sub__women hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>    
+                        </div>
+                        <div class="category__sub__kid hide">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video__max">
+            <div class="video">
+
+            </div>
+        </div>
+        <div class="context__1__max">
+            <div class="context__1">
+                <div class="context__1_1">
+                    <h2>Belanja Fashion Terbaik di ZALORA Indonesia- 500+ Brand Terkemuka</h2>
+                    <p>
+                        ZALORA berdiri di Indonesia pada tahun 2012. Dengan pilihan lebih dari 500 brand lokal dan internasional, kami membawa fashion ke dalam dimensi yang lebih baik dari sebelumnya. Kami menawarkan pakaian wanita, pakaian pria, sepatu, aksesoris, perlengkapan olahraga, busana muslim, dan banyak lagi! ZALORA adalah toko fashion online yang melayani segala keperluan fashion Anda. Hubungi kami melalui Facebook, ikuti Twitter atau Instagram untuk informasi terbaru seputar fashion dan tren terkini.
+                    </p>
+                </div>
+                <div class="context__1_2">
+                    <img src="../Image/fashion-portrait-young-elegant-woman.jpg" alt="Fashion">
+                </div>
+                <div class="context__2_1">
+                    <img src="../Image/7720441.jpg" alt="Why Choose Us">
+                </div>
+                <div class="context__2_2">
+                    <h2>Kenapa Memilih ZALORA?</h2>
                     <ul>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
-                        <li><a href="#">Dummy <span>10k</span></a></li>
+                        <li><strong>Pengiriman Cepat:</strong> Nikmati layanan pengiriman yang cepat dan efisien ke seluruh Indonesia.</li>
+                        <li><strong>Retur Mudah:</strong> Proses retur barang yang mudah dan tanpa ribet, sehingga Anda dapat berbelanja dengan tenang.</li>
+                        <li><strong>Promo dan Diskon Menarik:</strong> Dapatkan penawaran dan diskon eksklusif yang tidak boleh Anda lewatkan.</li>
+                        <li><strong>Pilihan yang Luas:</strong> Temukan beragam pilihan produk fashion dari brand-brand ternama.</li>
+                        <li><strong>Pengalaman Belanja yang Nyaman:</strong> Antarmuka website yang user-friendly untuk pengalaman belanja yang lebih baik.</li>
                     </ul>
                 </div>
+                <div class="context__2_1">
+                    <img src="../Image/7720441.jpg" alt="Why Choose Us">
+                </div>
+                <div class="context__2_2">
+                    <h2>Kenapa Memilih ZALORA?</h2>
+                    <ul>
+                        <li><strong>Pengiriman Cepat:</strong> Nikmati layanan pengiriman yang cepat dan efisien ke seluruh Indonesia.</li>
+                        <li><strong>Retur Mudah:</strong> Proses retur barang yang mudah dan tanpa ribet, sehingga Anda dapat berbelanja dengan tenang.</li>
+                        <li><strong>Promo dan Diskon Menarik:</strong> Dapatkan penawaran dan diskon eksklusif yang tidak boleh Anda lewatkan.</li>
+                        <li><strong>Pilihan yang Luas:</strong> Temukan beragam pilihan produk fashion dari brand-brand ternama.</li>
+                        <li><strong>Pengalaman Belanja yang Nyaman:</strong> Antarmuka website yang user-friendly untuk pengalaman belanja yang lebih baik.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h4>Follow Us</h4>
+                <ul class="social__icons">
+                    <li><a href="#"><img src="/Image/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#"><img src="/Image/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="/Image/twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#"><img src="/Image/youtube.png" alt="YouTube"> YouTube</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__section">
+                <h4>Contact Us</h4>
+                <p>Email: support@zalora.com</p>
+                <p>Phone: +1 800 123 4567</p>
+                <p>Working Hours: Mon-Fri, 9AM - 6PM</p>
+            </div>
+        </div>
+    
+        <div class="footer__bottom">
+            <p>&copy; 2024 ZALORA. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
     <script src="../Script/home.js"></script>
 </body>
 </html>

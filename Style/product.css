@@ -85,6 +85,7 @@ color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .carousel-images {
+    justify-content: center;
     display: flex;
     transition: transform 0.5s ease;
 }
@@ -122,8 +123,8 @@ color: #ffffff;
 }
 .color-options img {
     width: 50px;
-    height: 50px;
-    margin-right: 10px;
+    height: 65px;
+    margin-right: 20px;
     cursor: pointer;
     border: 2px solid transparent;
     transition: border-color 0.3s, transform 0.3s;
