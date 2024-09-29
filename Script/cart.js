@@ -88,7 +88,7 @@ updateEventListeners();
 countPricePerItem();
 calculateCheckedItems();
 
-const products = [
+const products__popular = [
     { id: 1, name: "Product 1", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
     { id: 2, name: "Product 2", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
     { id: 3, name: "Product 3", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
@@ -101,14 +101,16 @@ const products = [
 
 const popular = document.getElementById('popularItem');
 
-products.forEach(product => {
+products__popular.forEach(product => {
     const item = document.createElement('div');
     item.className = 'popular__item__container';
     item.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="popular__item__img">
-        <h3>${product.name}</h3>
-        <p>${product.price}</p>
-        <p>${product.description}</p>
+        <a href="" class="" id="">
+            <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+            <h3>${product.name}</h3>
+            <p>${product.price}</p>
+            <p>${product.description}</p>
+        </a>
     `;
     popular.appendChild(item);
 });

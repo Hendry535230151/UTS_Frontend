@@ -53,7 +53,7 @@ body {
 }
 
 .popular {
-    overflow-x: auto;
+    padding: 20px;
 }
 
 .navbar h1, .popular h2 {
@@ -296,6 +296,12 @@ body {
 }
 
 .popular__max {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+
     overflow-x: auto; 
     white-space: nowrap; 
 }
@@ -305,6 +311,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    overflow-x: auto;
 }
 
 .popular__item__container {
@@ -320,6 +327,11 @@ body {
     width: 300px;
     height: 300px; 
     border-radius: 50px 50px 0 0
+}
+
+.popular__item__container a {
+    color: #333;
+    text-decoration: none;
 }
 
 .popular__item__container h3, .popular__item__container p {
