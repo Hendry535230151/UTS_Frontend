@@ -87,3 +87,28 @@ countProduct();
 updateEventListeners();
 countPricePerItem();
 calculateCheckedItems();
+
+const products = [
+    { id: 1, name: "Product 1", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 2, name: "Product 2", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 3, name: "Product 3", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 4, name: "Product 4", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 5, name: "Product 5", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 6, name: "Product 6", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 7, name: "Product 7", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 8, name: "Product 8", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+];
+
+const popular = document.getElementById('popularItem');
+
+products.forEach(product => {
+    const item = document.createElement('div');
+    item.className = 'popular__item__container';
+    item.innerHTML = `
+        <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+        <h3>${product.name}</h3>
+        <p>${product.price}</p>
+        <p>${product.description}</p>
+    `;
+    popular.appendChild(item);
+});

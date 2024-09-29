@@ -9,6 +9,19 @@ body {
     background-color: #f5f5f5;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(179, 179, 179);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #333;
+}
+
 .main__container {
     width: 100vw;
     height: auto;
@@ -151,19 +164,6 @@ body {
 .context__1 {
     width: 100%;
     max-width: 1400px;
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgb(179, 179, 179);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #333;
 }
 
 .category__main__cat {
