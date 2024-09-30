@@ -27,47 +27,39 @@
         <div class="product-images">
             <div class="carousel">
                 <div class="carousel-images" id="carousel-images">
-                    <div class="carousel-images">
-                        <img src="../Image/calvin-klein.png" alt="Adilette Slides 1" class="active">
-                        <img src="https://placehold.co/400x401" alt="Adilette Slides 2">
-                        <img src="https://placehold.co/400x402" alt="Adilette Slides 3">
-                    </div>
-                    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-                    <button class="next" onclick="changeSlide(1)">&#10095;</button>
                 </div>
-                <div class="color-options" id="color-options">
-                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
+            <div class="color-options" id="color-options">
+            </div>
+        </div>
 
-            <div class="product-details">
-                <h1 class="product-title" id="product-title"></h1>
-                <div class="rating">
-                    <div class="stars" id="product-stars"></div>
-                    <span class="review-count" id="product-reviews"></span>
-                </div>
-                <p class="product-price" id="product-price"></p>
-                <p class="product-description" id="product-descrip "></p>
-                <p id="product-variation"></p>
+        <div class="product-details">
+            <h1 class="product-title" id="product-title"></h1>
+            <div class="rating">
+                <div class="stars" id="product-stars"></div>
+                <span class="review-count" id="product-reviews"></span>
+            </div>
+            <p class="product-price" id="product-price"></p>
+            <p class="product-description" id="product-description"></p>
+            <p id="product-variation"></p>
 
-                <div class="size-options">
-                    <h3></h3>
-                    <select id="sizeDropdown" onchange="selectSize(this)">
-                    <option value="" disabled selected>Select Size</option>
+            <div class="size-options">
+                <h3></h3>
+                <select id="sizeDropdown" onchange="selectSize(this)">
+                    <option value="" disabled selected>Pilih Ukuran</option>
                     <option value="36.7">36.7</option>
                     <option value="38">38</option>
                     <option value="39.3">39.3</option>
                     <option value="40.7">40.7</option>
                 </select>
-                </div>
-                <div class="leftright">
-                    <button class="add-to-cart" onclick="addToCart()">Add To Cart</button>
-                    <button class="add-to-cart" onclick="addToCart()">Buy Now</button>
-                </div>
             </div>
+            <button class="add-to-cart" onclick="addToCart()">Masukkan ke Tas</button>
         </div>
-
-        <script src="../Data/products.js"></script>
-        <script src="../Script/product.js"></script>
+    </div>
+    
+    <script src="../Script/product.js"></script>
 </body>
 
 </html>
