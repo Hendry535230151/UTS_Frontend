@@ -264,7 +264,6 @@ body::-webkit-scrollbar-thumb {
 
 .context__1_1 {
     height: 100%;
-    background-color: rebeccapurple;
     padding: 50px 100px;
     margin-bottom: 50px;
     grid-column: 2 span;
@@ -433,7 +432,7 @@ body::-webkit-scrollbar-thumb {
         grid-template-rows: auto 500px 0;
     }
     to {
-        grid-template-rows: auto 500px minmax(700px, auto);
+        grid-template-rows: auto 500px 700px;
     }
 }
 
