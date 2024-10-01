@@ -34,64 +34,50 @@
                 <div id="categoryBox" class="category__box hide">
                     <div class="category__main__cat">
                         <ul>
-                            <li><button href="">Beauty</button></li>
-                            <li><button href="">Lifestyle</button></li>
-                            <li><button href="">Luxury</button></li>
-                            <li><button href="">Sport</button></li>
-                            <li><button href="">Men</button></li>
-                            <li><button href="">Women</button></li>
-                            <li><button href="">Kids</button></li>
+                            <li><button onclick="window.location.href = 'zalora_beauty.html'">Beauty</button></li>
+                            <li><button onclick="window.location.href = 'zalora_luxury.html'">Luxury</button></li>
+                            <li><button onclick="window.location.href = 'zalora_sport.html'">Sport</button></li>
+                            <li><button onclick="window.location.href = 'zalora_men.html'">Men</button></li>
+                            <li><button onclick="window.location.href = 'zalora_women.html'">Women</button></li>
+                            <li><button onclick="window.location.href = 'zalora_kids.html'">Kids</button></li>
                         </ul>
                     </div>
                     <div class="category__sub__cat">
                         <div class="category__sub__beauty">
-                            <ul>
-                                <li><a href="">Make Up</a></li>
-                                <li><a href="">Face Cream</a></li>
-                                <li><a href="">Lipstick</a></li>
-                            </ul>
-                        </div>
-                        <div class="category__sub__ls hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <h2>Beauty</h2>
+                            <p>
+                                Produk kecantikan dirancang untuk meningkatkan penampilan dan memperbaiki kualitas kulit. Dengan berbagai pilihan, mulai dari serum hingga masker wajah, setiap produk memiliki formula unik yang menargetkan masalah kulit tertentu, seperti penuaan, jerawat, atau kekeringan. Menggunakan produk yang tepat dapat membantu mencapai kulit yang lebih sehat dan bercahaya. Banyak orang menggunakan makeup dan perawatan ku lit sebagai cara untuk menonjolkan fitur terbaik mereka dan meningkatkan rasa percaya diri.
+                            </p>
                         </div>
                         <div class="category__sub__luxury hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <h2>Luxury</h2>
+                            <p>
+                                Produk mewah dirancang untuk memberikan pengalaman yang tak tertandingi dan kualitas yang luar biasa. Setiap item dalam kategori ini dipilih dengan cermat untuk memastikan bahwa Anda mendapatkan yang terbaik dari yang terbaik. Dari parfum eksklusif hingga perawatan kulit premium, setiap produk mewakili kemewahan dan keanggunan. Menikmati produk mewah tidak hanya meningkatkan penampilan, tetapi juga menciptakan momen spesial dalam hidup Anda.
+                            </p>                            
                         </div>
                         <div class="category__sub__sport hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                            <h2>Sport</h2>
+                            <p>
+                                Kategori olahraga mencakup produk yang dirancang untuk mendukung aktivitas fisik dan gaya hidup sehat. Dari pakaian olahraga yang nyaman hingga alat kebugaran yang inovatif, setiap item ditujukan untuk meningkatkan performa dan membantu Anda mencapai tujuan kebugaran Anda. Olahraga tidak hanya baik untuk tubuh, tetapi juga untuk jiwa, dan produk dalam kategori ini membantu Anda tetap termotivasi dan terinspirasi untuk menjalani hidup yang lebih aktif.
+                            </p>
                         </div>
                         <div class="category__sub__men hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>    
+                            <h2>Men</h2>
+                            <p>
+                                Kategori untuk pria menawarkan produk yang dirancang khusus untuk memenuhi kebutuhan dan gaya hidup mereka. Dari perawatan pribadi hingga fashion terkini, setiap item ditujukan untuk membantu pria tampil percaya diri dan stylish. Dalam dunia yang semakin berkembang, memiliki aksesori dan produk yang tepat dapat meningkatkan citra diri dan membantu mencapai tujuan pribadi maupun profesional.
+                            </p>                            
                         </div>
                         <div class="category__sub__women hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>    
+                            <h2>Women</h2>
+                            <p>
+                                Produk untuk wanita dirancang untuk meningkatkan kecantikan dan mendukung gaya hidup aktif. Dari fashion hingga perawatan kulit, kategori ini menyediakan berbagai pilihan yang memungkinkan wanita mengekspresikan diri mereka dengan percaya diri. Dengan beragam produk yang mendukung berbagai peran dalam kehidupan, wanita dapat menemukan apa yang mereka butuhkan untuk meraih impian dan mengatasi tantangan sehari-hari.
+                            </p>                            
                         </div>
                         <div class="category__sub__kid hide">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>    
+                            <h2>Kid</h2>
+                            <p>
+                                Kategori untuk anak-anak menawarkan produk yang dirancang dengan aman dan menyenangkan. Dari mainan edukatif hingga pakaian yang nyaman, setiap item dalam kategori ini berfokus pada pengembangan dan kebahagiaan anak. Memastikan anak-anak memiliki akses ke produk yang berkualitas membantu mendukung pertumbuhan mereka sambil memberikan pengalaman bermain yang menyenangkan.
+                            </p>                            
                         </div>
                     </div>
                 </div>
@@ -103,7 +89,7 @@
             </div>
         </div>
         <div class="context__1__max">
-            <div class="context__1">
+            <div id="mainContext" class="context__1 hide__grid">
                 <div class="context__1_1">
                     <h2>Belanja Fashion Terbaik di ZALORA Indonesia- 500+ Brand Terkemuka</h2>
                     <p>
@@ -111,20 +97,43 @@
                     </p>
                 </div>
                 <div class="context__1_2">
-                    <img src="../Image/fashion-portrait-young-elegant-woman.jpg" alt="Fashion">
+                    <h2>Mengapa Pengguna Memilih Kami?</h2>
+                    <p>
+                        Kami menawarkan pengalaman berbelanja yang menjadi bagian dari gaya hidup modern, dengan produk-produk fashion terkini dari merek ternama, kemudahan belanja online, dan layanan cepat. ZALORA hadir untuk mendukung gaya hidup Anda yang dinamis dan selalu up-to-date dengan tren fashion terbaru.
+                    </p>
                 </div>
-                <div class="context__2_1">
-                    <img src="../Image/7720441.jpg" alt="Why Choose Us">
+                <div class="context__1_3">
+                    <button id="showStoryButton">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <p>Click Here</p>
+                    </button>
                 </div>
-                <div class="context__2_2">
-                    <h2>Kenapa Memilih ZALORA?</h2>
-                    <ul>
-                        <li><strong>Pengiriman Cepat:</strong> Nikmati layanan pengiriman yang cepat dan efisien ke seluruh Indonesia.</li>
-                        <li><strong>Retur Mudah:</strong> Proses retur barang yang mudah dan tanpa ribet, sehingga Anda dapat berbelanja dengan tenang.</li>
-                        <li><strong>Promo dan Diskon Menarik:</strong> Dapatkan penawaran dan diskon eksklusif yang tidak boleh Anda lewatkan.</li>
-                        <li><strong>Pilihan yang Luas:</strong> Temukan beragam pilihan produk fashion dari brand-brand ternama.</li>
-                        <li><strong>Pengalaman Belanja yang Nyaman:</strong> Antarmuka website yang user-friendly untuk pengalaman belanja yang lebih baik.</li>
-                    </ul>
+                <div class="context__1_4">
+                    <div class="slide__show">
+                        <div class="slide fade">
+                            <img src="../Image/jeans.webp">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../Image/jeans1.webp">
+                        </div>
+                        <div class="slide fade">
+                            <img src="../Image/jeans2.webp">
+                        </div>
+                        <a id="prev" class="prev hide" onclick="plusSlides(-1)">&#10094;</a>
+                        <a id="next" class="next hide" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div id="description" class="slide__description hide">
+                        <h2>Cerita Kami</h2>
+                        <p id="slideContent">
+
+                        </p>
+                        <!-- <div class="review__container">
+                            <div class="review">
+                                <p>Name</p>
+                                <p></p>
+                            </div>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
