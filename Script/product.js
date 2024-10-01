@@ -221,9 +221,11 @@ const products = {
 let currentSlide = 0;
 let slides;
 
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 function showSlide(index) {
     slides = document.querySelectorAll('.carousel-images img');
-    
+
     slides.forEach((slide, i) => {
         slide.classList.remove('active');
         if (i === index) {
@@ -232,10 +234,16 @@ function showSlide(index) {
     });
 }
 
+
 function changeSlide(direction) {
     currentSlide = (currentSlide + direction + slides.length) % slides.length;
-    showSlide(currentSlide);
+    showSlide(currentSlide)
 }
+
+const autoscroll = 3000;
+setInterval(() => {
+    changeSlide(1);
+}, autoscroll);
 
 function getProductIdFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -269,5 +277,19 @@ function displayProductDetails(productId) {
     }
 }
 
+function addToCart() {
+    const productId = getProductIdFromURL();
+    const product = products[productId];
+    if (product) {
+        cart.push({ id: productId, title: product.title, price: product.price, quantity: 1 });
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert(`${product.title} Have been added to cart`);
+    }
+}
+
+function bayar() {
+    alert("Berhasil Melakukan Pembayaran");
+    localStorage.clear();
+}
 const productId = getProductIdFromURL();
 displayProductDetails(productId);
