@@ -271,6 +271,106 @@ body {
 .product_item button:hover {
     background-color: #444;
 }
+#story_product {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.story_grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.story_item {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.story_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.story_item h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.story_item p {
+    margin: 10px 0;
+}
+
+.story_link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.story_link:hover {
+    background-color: #555;
+}
+
+.story_item img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    
+}
+
+.testimonies_section {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.testimony_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimony_item {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.testimony_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimony_text {
+    text-align: left;
+}
+
+.testimony_text h4 {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
  #featured-brands {
      background-color: #f9f9f9;
      padding: 40px;
