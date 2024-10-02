@@ -37,6 +37,10 @@
     display: flex;
 }
 
+.navbar ul li:last-child {
+    margin-left: auto;
+}
+
 .navbar ul li {
     float: left;
 }
