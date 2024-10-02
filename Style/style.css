@@ -71,109 +71,57 @@ body {
     padding: 20px;
     text-align: center;
 }
-
-
-.banner-men {
-    margin-top: 0px;
-    background-image: url('/Image/mensfashion.gif');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-
-.banner-women {
-    margin-top: 0px;
-    background-image: url('/Image/womensfashion.gif');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-.banner-kids {
-    margin-top: 0px;
-    background-image: url('/Image/kidsfashion.gif');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-.banner-sport {
-    margin-top: 0px;
-    background-image: url('/Image/sportwear.jpg');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-.banner-luxury {
-    margin-top: 0px;
-    background-image: url('/Image/luxury.jpg');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-.banner-beauty {
-    margin-top: 0px;
-    background-image: url('/Image/beauty.gif');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-
-.banner-lifestyle {
-    margin-top: 0px;
-    background-image: url('/Image/lifestyle.gif');
-    height: 27vw;
-    width: 80vw;
-    background-size: cover;
-    background-position: center;
-    padding: 60px;
-    color: #fff;
-}
-
 .container_banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 38vw;
+    position: relative;
     width: 100%;
-
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
 }
 
-.container {
-    height: 100%;
-    background-color: #0000005d;
+.banner-slider {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+}
+
+.banner {
+    min-width: 100%;
+}
+
+.banner img {
+    width: 100vw;
+    height: auto;
+    display: flex;
     justify-content: center;
 }
 
-.container h2 {
-    font-size: 48px;
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
 }
 
-.container p {
-    font-size: 24px;
+button.prev {
+    left: 0;
 }
 
+button.next {
+    right: 0;
+}
 
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 
 
@@ -329,48 +277,65 @@ body {
     transition: transform 0.3s ease, filter 0.3s ease;
     
 }
-
-.testimonies_section {
-    padding: 40px;
-    background-color: #f4f4f4;
+.tips_tricks_section {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
     text-align: center;
-    margin-top: 40px;
 }
 
-.testimony_container {
+.tips_tricks_section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.tips_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.testimony_item {
-    width: 80%;
-    padding: 20px;
-    background-color: white;
-    margin: 10px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.tips_item {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
 }
 
-.testimony_image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
+.tips_item:hover {
+    transform: translateY(-10px);
 }
 
-.testimony_text {
+.tips_text_container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
     text-align: left;
+    max-width: 600px;
 }
 
-.testimony_text h4 {
-    margin-top: 10px;
-    font-size: 1.1em;
+.tips_text_container p {
+    font-size: 18px;
+    line-height: 1.6;
     color: #333;
 }
 
+.tips_text_container h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
  #featured-brands {
      background-color: #f9f9f9;
      padding: 40px;

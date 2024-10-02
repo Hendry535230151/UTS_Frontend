@@ -1,4 +1,41 @@
 $(document).ready(function() {
+    $(document).ready(function() {
+    let currentIndex = 0;
+    const banners = $('.banner');
+    const totalBanners = banners.length;
+
+    function showSlide(index) {
+
+        if (index >= totalBanners) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = totalBanners - 1;
+        } else {
+            currentIndex = index;
+        }
+ 
+        $('.banner-slider').css('transform', `translateX(${-currentIndex * 100}%)`);
+    }
+
+
+    $('.next').click(function() {
+        showSlide(currentIndex + 1);
+    });
+
+
+    $('.prev').click(function() {
+        showSlide(currentIndex - 1);
+    });
+
+    setInterval(function() {
+        showSlide(currentIndex + 1);
+    }, 5000);
+});
+
+
+
+
+
     function filterProducts() {
         let searchValue = $('#search').val().toLowerCase();
         let selectedCategory = $('#category').val();
