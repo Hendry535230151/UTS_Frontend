@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(document).ready(function() {
+    
     let currentIndex = 0;
     const banners = $('.banner');
     const totalBanners = banners.length;
@@ -30,7 +30,7 @@ $(document).ready(function() {
     setInterval(function() {
         showSlide(currentIndex + 1);
     }, 5000);
-});
+
 
 
 
