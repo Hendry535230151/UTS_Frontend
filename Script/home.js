@@ -87,27 +87,26 @@ function showGrid() {
 }
 
 const products__popular = [
-    { id: 1, name: "Product 1", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 2, name: "Product 2", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 3, name: "Product 3", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 4, name: "Product 4", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 5, name: "Product 5", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 6, name: "Product 6", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 7, name: "Product 7", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 8, name: "Product 8", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/socks.webp" },
+    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/watch1.webp" },
+    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/ring1.webp" },
+    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama.webp" },
+    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/necklace.webp" },
+    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/sneakers.webp" },
+    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama1.webp" },
+    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp" },
 ];
 
 const products__foru = [
-    { id: 1, name: "Product 1", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 2, name: "Product 2", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 3, name: "Product 3", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 4, name: "Product 4", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 5, name: "Product 5", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 6, name: "Product 6", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 7, name: "Product 7", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
-    { id: 8, name: "Product 8", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
+    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/socks.webp" },
+    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/watch1.webp" },
+    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/ring1.webp" },
+    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama.webp" },
+    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/necklace.webp" },
+    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/sneakers.webp" },
+    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama1.webp" },
+    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp" },
 ];
-
 const customerRating = [
     { id: 1, name: "human 1232", description: "the best website ever", rating: "5.0", image:"../image/user1.jpg"},
     { id: 2, name: "human 3569", description: "I never know there is a lot of life hack", rating: "5.0", image:"../image/user2.jpg"},
@@ -124,7 +123,9 @@ products__popular.forEach(product => {
     item.className = 'popular__item__container';
     item.innerHTML = `
         <a href="" class="" id="">
-            <img src="${product.image}" alt="${product.name}">
+            <div class="container__item">
+                <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+            </div>
             <h3>${product.name}</h3>
             <p>${product.price}</p>
             <p>${product.description}</p>
@@ -139,7 +140,9 @@ products__foru.forEach(product => {
     item.className = 'foru__item__container';
     item.innerHTML = `
         <a href="" class="" id="">
-            <img src="${product.image}" alt="${product.name}">
+            <div class="container__item">
+                <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+            </div>
             <h3>${product.name}</h3>
             <p>${product.price}</p>
             <p>${product.description}</p>
