@@ -10,6 +10,24 @@ const next = document.getElementById('next');
 const catsButton = document.querySelectorAll('.category__main__cat ul li button');
 const cats = document.querySelectorAll('.category__sub__cat > div');
 
+const imageList = [
+    "skincare-makeup-concept-beautiful-asian-female-woman-with-healthy-facial-skin-close-up-portrait-studio-shot.jpg",
+    "image2.jpg",
+    "image3.jpg",
+];
+
+function preloadImages(images) {
+    images.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    preloadImages(imageList);
+});
+
+
 buttons.forEach((button) => {
     button.onclick = function () {
         buttons.forEach((btn) => {
@@ -41,21 +59,32 @@ catsButton.forEach((catBtn, index) => {
 });
 
 
+let isGridVisible = false;
+
 showStory.addEventListener('click', function() {
-    if (main.classList.contains('show__grid')) {
-        main.classList.remove('show__grid');
-        main.classList.add('hide__grid');
-        desc.classList.add('hide');
-        prev.classList.add('hide');
-        next.classList.add('hide');
+    if (isGridVisible) {
+        hideGrid();
     } else {
-        main.classList.remove('hide__grid');
-        main.classList.add('show__grid');
-        desc.classList.remove('hide');
-        prev.classList.remove('hide');
-        next.classList.remove('hide');
+        showGrid();
     }
-})
+    isGridVisible = !isGridVisible;
+});
+
+function hideGrid() {
+    main.classList.remove('show__grid');
+    main.classList.add('hide__grid');
+    desc.classList.add('hide');
+    prev.classList.add('hide');
+    next.classList.add('hide');
+}
+
+function showGrid() {
+    main.classList.remove('hide__grid');
+    main.classList.add('show__grid');
+    desc.classList.remove('hide');
+    prev.classList.remove('hide');
+    next.classList.remove('hide');
+}
 
 const products__popular = [
     { id: 1, name: "Product 1", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
@@ -79,15 +108,23 @@ const products__foru = [
     { id: 8, name: "Product 8", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 20.000", image: "https://via.placeholder.com/150" },
 ];
 
+const customerRating = [
+    { id: 1, name: "human 1232", description: "the best website ever", rating: "5.0", image:"../image/user1.jpg"},
+    { id: 2, name: "human 3569", description: "I never know there is a lot of life hack", rating: "5.0", image:"../image/user2.jpg"},
+    { id: 3, name: "human 4445", description: "OMG!!! this is the best", rating: "5.0", image:"../image/user3.jpg"},
+    { id: 4, name: "human 5785", description: "It recommend us the best combination of shirt and pants", rating: "5.0", image:"../image/user4.jpg"},
+];
+
 const popular = document.getElementById('popularItem');
 const foru = document.getElementById('foruItem');
+const customer = document.getElementById('customerRating');
 
 products__popular.forEach(product => {
     const item = document.createElement('div');
     item.className = 'popular__item__container';
     item.innerHTML = `
         <a href="" class="" id="">
-            <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+            <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.price}</p>
             <p>${product.description}</p>
@@ -96,12 +133,13 @@ products__popular.forEach(product => {
     popular.appendChild(item);
 });
 
+
 products__foru.forEach(product => {
     const item = document.createElement('div');
     item.className = 'foru__item__container';
     item.innerHTML = `
         <a href="" class="" id="">
-            <img src="${product.image}" alt="${product.name}" class="popular__item__img">
+            <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.price}</p>
             <p>${product.description}</p>
@@ -110,15 +148,33 @@ products__foru.forEach(product => {
     foru.appendChild(item);
 });
 
+customerRating.forEach(rating => {
+    const item = document.createElement('div');
+    item.className = 'customer__rating__container';
+    item.innerHTML = `
+        <div class="customer__rating__image">
+            <img src="${rating.image}" alt="${rating.name}">
+        </div>
+        <div class="rating__section">
+            <div class="top__section">
+                <h3>${rating.name}</h3>
+                <p>${rating.rating}</p>
+            </div>
+            <p>${rating.description}</p>
+        </div>
+    `;
+    customer.appendChild(item);
+});
+
 const descriptions = {
-    "jeans.webp": {
+    "skincare-makeup-concept-beautiful-asian-female-woman-with-healthy-facial-skin-close-up-portrait-studio-shot.jpg": {
+        content: "Kami menjual produk kecantikan, seperti skincare dan makeup, karena pentingnya perawatan diri semakin disadari oleh banyak orang, terutama dalam menjaga kesehatan kulit dan tampil percaya diri. Skincare membantu merawat kulit agar tetap sehat, lembut, dan terlindungi dari faktor eksternal, sementara makeup memberikan sentuhan akhir untuk menonjolkan kecantikan alami. Dengan semakin banyaknya permintaan terhadap produk kecantikan, terutama di kalangan perempuan yang peduli terhadap kesehatan kulit dan penampilan mereka, kategori ini menjadi pilihan penting untuk kami tawarkan. Produk-produk ini mendukung pelanggan dalam mencapai kulit yang sehat dan tampilan yang memukau, menciptakan pengalaman yang memuaskan."
+    },
+    "young-stylish-macho-boy-black-jacket-posed-outdoor-street-amazing-model-man.jpg": {
         content: "Setiap Pria memiliki cara berbeda dalam hal pemilihan pakaian serta produk-produk yang diperlukan. Namun tidak semua pria dapat memilih produk-produk yang cocok untuk diri sendiri. disini lah kita menyediakan berbagai opsi untuk para pria untuk mengekspresikan gaya mereka sendiri dengan cara yang lebih modern dan lebih nyaman. Di zalora menyediakan fashion yang sesuai untuk pria dimoment apa pun."
     },
-    "jeans1.webp": {
-        content: "Test"
-    },
     "jeans2.webp": {
-        content: "Test"
+        content: "Test2"
     }
 };
 

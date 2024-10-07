@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/login.css">
+    
+    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main__container">
+        <div class="login__container">
+            <div class="button__tab">
+                <button class="active" onclick="toggleContainer('signIn')"><i class="fa-solid fa-door-closed"></i>SIGN-IN</button>
+                <button onclick="toggleContainer('logIn')"><i class="fa-solid fa-door-open"></i>LOGIN</button>
+            </div>
+            <div id="signIn" class="container__1">
+                <div class="text__container">
+                    <h1>HELLO NEW USE, WELCOME TO OUR WEBSITE "ZALORA"</h1>
+                </div>
+                <div class="input__container">
+                    <form>
+                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Password" required>
+                        <input type="text" placeholder="Password Confirmation" required>
+                        <button type="submit" onclick="window.location.href = 'home.html'">REGISTER</button>
+                    </form>
+                </div>
+                <div class="button__container">
+                    <div class="text__typer">
+                        <div id="text1" class="typing__text">Let's find more interesting item in our website</div><br>
+                        <div id="text2" class="typing__text">Find amazing product in here</div>
+                    </div>
+                </div>
+            </div>
+            <div id="logIn" class="container__2 hide">
+                <div class="text__container">
+                    <h1>HELLO USER, WELCOMBA BACK TO "ZALORA". HOPE YOU HAVE A NICE DAY"</h1>
+                </div>
+                <div class="input__container">
+                    <form>
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" placeholder="Password" required>
+                        <button type="submit" onclick="window.location.href = 'home.html'">REGISTER</button>
+                    </form>
+                </div>
+                <div class="button__container">
+                    <div class="text__typer">
+                        <div id="text1" class="typing__text">Let's find more interesting item in our website</div><br>
+                        <div id="text2" class="typing__text">Find amazing product in here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Script/login.js"></script>
+</body>
+</html>
