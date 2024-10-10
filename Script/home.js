@@ -83,25 +83,25 @@ function showGrid() {
 }
 
 const products__popular = [
-    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
-    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
-    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
-    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
-    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
-    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
-    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
-    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
+    { id: 1, name: "Nike Socks", description: "Comfortable and durable socks for everyday wear.", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
+    { id: 2, name: "Alexander Watch", description: "Elegant wrist watch for a sophisticated look.", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
+    { id: 3, name: "Ring", description: "Elegant ring made of premium silver, perfect for formal or casual wear.", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
+    { id: 4, name: "Kids Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
+    { id: 5, name: "Gold Necklance", description: "A luxurious necklace made of high-quality materials for a refined look.", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
+    { id: 6, name: "Sketchers Shoes", description: "Trendy sneakers for an active lifestyle, featuring cutting-edge design and comfort.", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
+    { id: 7, name: "Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
+    { id: 8, name: "Skirt", description: "A fashionable skirt, perfect for formal and casual occasions.", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
 ];
 
 const products__foru = [
-    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
-    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
-    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
-    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
-    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
-    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
-    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
-    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
+    { id: 1, name: "Nike Socks", description: "Comfortable and durable socks for everyday wear.", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
+    { id: 2, name: "Alexander Watch", description: "Elegant wrist watch for a sophisticated look.", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
+    { id: 3, name: "Ring", description: "Elegant ring made of premium silver, perfect for formal or casual wear.", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
+    { id: 4, name: "Kids Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
+    { id: 5, name: "Gold Necklance", description: "A luxurious necklace made of high-quality materials for a refined look.", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
+    { id: 6, name: "Sketchers Shoes", description: "Trendy sneakers for an active lifestyle, featuring cutting-edge design and comfort.", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
+    { id: 7, name: "Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
+    { id: 8, name: "Skirt", description: "A fashionable skirt, perfect for formal and casual occasions.", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
 ];
 const customerRating = [
     { id: 1, name: "human 1232", description: "the best website ever", rating: "5.0", image:"../image/user1.jpg"},
@@ -135,7 +135,7 @@ products__foru.forEach(product => {
     const item = document.createElement('div');
     item.className = 'foru__item__container';
     item.innerHTML = `
-        <a href="" class="" id="">
+        <a href="${product.link}" class="" id="">
             <div class="container__item">
                 <img src="${product.image}" alt="${product.name}" class="popular__item__img">
             </div>
