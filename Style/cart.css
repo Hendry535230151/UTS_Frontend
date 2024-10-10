@@ -303,9 +303,18 @@ body::-webkit-scrollbar-thumb {
 .item__img {
     width: 200px;
     height: 200px;
-    border: 1px solid#333;
+    border: 1px solid #333;
     border-radius: 25px;
+    overflow: hidden;
 }
+
+.item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 .bill__list {
     width: 100%;
@@ -437,7 +446,7 @@ body::-webkit-scrollbar-thumb {
 
 .container__item img {
     width: 95%;
-    height: 95%; 
+    height: 95%;
     border-radius: 50px;
     object-fit: cover;
     object-position: center;

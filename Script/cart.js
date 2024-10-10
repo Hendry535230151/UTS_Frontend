@@ -109,7 +109,7 @@ function loadCartItems() {
                 <button class="xclose__button">&times;</button>
             </div>
             <div class="item__img">
-                <img src="${product.image}" alt="${product.title}">
+                <img src="${product.images[0]}" alt="${product.title}">
             </div>
             <div class="item__description">
                 <h6>${product.title}</h6>

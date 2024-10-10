@@ -277,11 +277,16 @@ function displayProductDetails(productId) {
     }
 }
 
+function show(){
+    const product = products[productId];
+    console.log(product);
+}
+
 function addToCart() {
     const productId = getProductIdFromURL();
     const product = products[productId];
     if (product) {
-        cart.push({ id: productId, title: product.title, price: product.price, quantity: 1 });
+        cart.push({ id: productId, title: product.title, price: product.price, quantity: 1, images: product.images });
         localStorage.setItem('cart', JSON.stringify(cart));
         alert(`${product.title} Have been added to cart`);
     }
