@@ -82,6 +82,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
+    height: 70px;
     align-items: center;
     z-index: 1;
 }

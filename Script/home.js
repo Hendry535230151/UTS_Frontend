@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     profBtn.onclick = function () {
-        
+        window.location.href = 'profile.html';
     }
 });
 
