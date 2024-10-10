@@ -9,7 +9,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     background-color: #f5f5f5;
 }
 
@@ -217,7 +217,7 @@ body::-webkit-scrollbar-thumb {
     color: #000;
     text-shadow: 0 0 10px #333;
     transition: 0.3s ease-in-out;
-}   
+}
 
 .xclose__button:hover {
     color: #696969;
