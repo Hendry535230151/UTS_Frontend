@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
     margin-right: 10px;
 }
 
-.navbar__position a:hover, .navbar__position a.active {
+.right__navbar a:hover, .navbar__position a.active {
     outline: none;
     border-bottom: 4px solid #333;
     background-color: transparent;
@@ -599,7 +599,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 12px;
     }
 
-    .right__navbar a {
-        margin: 0;
+    .right__navbar a, .right__navbar a i {
+        margin: 0; 
     }
 }
