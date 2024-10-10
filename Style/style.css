@@ -542,6 +542,16 @@ footer {
         color: #666;
         font-size: 14px;
     }
+    .brand_item h3 {
+        margin: 15px 0 10px 0;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .brand_item p {
+        color: #666;
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
