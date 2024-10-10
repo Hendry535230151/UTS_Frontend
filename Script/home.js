@@ -45,24 +45,6 @@ buttons.forEach((button) => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    cartBtn.onclick = function () {
-        window.location.href = 'cart.html';
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    expBtn.onclick = function () {
-        window.location.href = 'zalora_page.html';
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    profBtn.onclick = function () {
-        window.location.href = 'profile.html';
-    }
-});
-
 catsButton.forEach((catBtn, index) => {
     catBtn.addEventListener('mouseover', () => {
         cats.forEach(cat => {

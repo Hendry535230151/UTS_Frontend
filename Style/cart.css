@@ -99,11 +99,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar__position i {
-    margin-right: 3px;
+    margin-right: 10px;
 }
 
-
-.navbar__position button:hover, .navbar__position button.active {
+.navbar__position a:hover, .navbar__position a.active {
     outline: none;
     border-bottom: 4px solid #333;
     background-color: transparent;
@@ -117,7 +116,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: left;
 }
 
-.left__navbar button, .right__navbar button {
+.right__navbar a {
     margin: 0 10px;
     padding: 5px 10px;
     background-color: transparent;
@@ -126,6 +125,9 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 0 solid transparent;
     text-wrap: nowrap;
     transition: 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .right__navbar {
@@ -134,7 +136,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: right;
 }
-
 
 .navbar h1, .popular h2 {
     margin-left: 20px;
@@ -363,7 +364,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.right__container button {
+.right__container a {
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -375,7 +376,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 
-.right__container button i {
+.right__container a i {
     color: #333;
     margin: 0;
     padding: 0;
@@ -516,7 +517,7 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
-    .right__navbar button {
+    .right__navbar a {
         padding: 0;
     }
 }
