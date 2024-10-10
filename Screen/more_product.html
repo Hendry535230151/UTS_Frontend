@@ -4,22 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/home.css">
     <link rel="stylesheet" href="../Style/style.css">
-    <title>Zalora - More Products</title>
+    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+<title>Zalora</title>
 </head>
 
+
 <body>
-    <div class="navbar_container">
-        <h1>ZALORA</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#Explore">EXPLORE</a></li>
-                <li><a href="./cart.html">CART</a></li>
-                <li><a href="#Wishlist">WISHLIST</a></li>
-                <li><a href="./profile.html">PROFILE</a></li>
-            </ul>
-        </nav>
+    <div class="navbar__max">
+        <div class="navbar">
+            <div class="navbar__position">
+                <div class="left__navbar">
+                    <a href="home.html">
+                        <h1>Zalora</h1>
+                    </a>
+                </div>
+                <div class="right__navbar">
+                    <button id="exploreButton"><i class="fa-brands fa-internet-explorer"></i>Explore</button>
+                    <button id="cartButton"><i class="fa-solid fa-cart-shopping"></i>Cart</button>
+                    <button><i class="fa-solid fa-user"></i>Profile</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+        <div class="filters">
+            <h3>Filter By:</h3>
+            <div class="filter_container">
+                <input type="text" id="search" placeholder="Search products..." class="search-bar">
+                <div class="filter_options">
+                    <select name="category" id="category">
+                        <option value="all">All Categories</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="footwear">Footwear</option>
+                        <option value="accessories">Accessories</option>
+                        <option value="bags">Bags</option>
+                    </select>
+                    <select name="price" id="price">
+                        <option value="all">All Prices</option>
+                        <option value="low">Under Rp 100.000</option>
+                        <option value="mid">Rp 100.000-Rp 500.000</option>
+                        <option value="high">Over Rp 500.000</option>
+                    </select>
+                </div>
+            </div>
+        </div>
 
     <div class="product_grid">
         <div class="product_item" data-category="clothing">
@@ -202,6 +236,8 @@
             </a>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Script/etc.js"></script>
 </body>
 
 </html>
