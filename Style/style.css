@@ -268,6 +268,20 @@ button:hover {
 .story_item_container{
     overflow-y: auto;
     height: 265px;
+    padding: 10px;
+}
+
+.story_item_container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.story_item_container::-webkit-scrollbar-track {
+    background-color: rgb(179, 179, 179);
+}
+
+.story_item_container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #333;
 }
 
 .story_item:hover {
@@ -303,6 +317,7 @@ button:hover {
     color: #666;
     font-size: 1em;
     text-align: justify;
+    font-family: "Playwrite DE Grund", cursive;
 }
 
 .story_item strong {
