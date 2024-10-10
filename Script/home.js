@@ -1,7 +1,6 @@
 const buttons = document.querySelectorAll('.navbar__position button');
 const exploreBtn = document.getElementById('exploreButton');
 const categoryBx = document.getElementById('categoryBox');
-const cartBtn = document.getElementById('cartButton');
 const showStory = document.getElementById('showStoryButton');
 const main = document.getElementById('mainContext');
 const desc = document.getElementById('description');
@@ -9,6 +8,10 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const catsButton = document.querySelectorAll('.category__main__cat ul li button');
 const cats = document.querySelectorAll('.category__sub__cat > div');
+
+const cartBtn = document.getElementById('cartButton');
+const expBtn = document.getElementById('exploreButton');
+const profBtn = document.getElementById('profileButton');
 
 const imageList = [
     "skincare-makeup-concept-beautiful-asian-female-woman-with-healthy-facial-skin-close-up-portrait-studio-shot.jpg",
@@ -46,6 +49,18 @@ buttons.forEach((button) => {
 document.addEventListener('DOMContentLoaded', function() {
     cartBtn.onclick = function () {
         window.location.href = 'cart.html';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    expBtn.onclick = function () {
+        window.location.href = 'zalora_page.html';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    profBtn.onclick = function () {
+        
     }
 });
 

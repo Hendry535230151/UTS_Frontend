@@ -22,7 +22,7 @@ function countPricePerItem() {
     const inputFields = document.querySelectorAll('.count__container input');
     inputFields.forEach((input, index) => {
         const quantity = parseInt(input.value) || 0;
-        const productPrice = 300000; // Replace with the product's actual price if needed
+        const productPrice = 300000;
         const totalPrice = productPrice * quantity;
         totalPricePerItem[index].textContent = `Rp. ${totalPrice.toLocaleString()}`;
     });
@@ -163,4 +163,29 @@ products__popular.forEach(product => {
         </a>
     `;
     popular.appendChild(item);
+});
+
+const choosePaymentMethodBtn = document.getElementById('choosePaymentMethodBtn');
+const paymentSelection = document.getElementById('paymentSelection');
+const setBtn = document.getElementById('setButton');
+const selected = document.getElementById('selected');
+
+choosePaymentMethodBtn.addEventListener('click', () => {
+    paymentSelection.style.display = 'block';
+});
+
+setBtn.addEventListener('click', () => {
+    const paymentOptions = document.querySelectorAll('input[name="payment"]');
+    let selectedValue;
+    paymentOptions.forEach(option => {
+        if (option.checked) {
+            selectedValue = option.value;
+        }
+    });
+    if (selectedValue) {
+        selected.textContent = selectedValue; 
+        paymentSelection.style.display = 'none'; 
+    } else {
+        window.alert('Please select the payment method first');
+    }
 });
