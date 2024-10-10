@@ -596,4 +596,8 @@ body::-webkit-scrollbar-thumb {
     .rating__section > p {
         font-size: 12px;
     }
+
+    .right__navbar a {
+        margin: 0;
+    }
 }

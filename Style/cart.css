@@ -518,6 +518,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     .right__navbar a {
-        padding: 0;
+        padding: 0; 
     }
 }
