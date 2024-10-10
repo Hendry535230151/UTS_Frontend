@@ -153,7 +153,7 @@ products__popular.forEach(product => {
     const item = document.createElement('div');
     item.className = 'popular__item__container';
     item.innerHTML = `
-        <a href="" class="" id="">
+        <a href="${product.link}" class="" id="">
             <div class="container__item">
                 <img src="${product.image}" alt="${product.name}" class="popular__item__img">
             </div>
