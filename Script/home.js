@@ -8,7 +8,6 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const catsButton = document.querySelectorAll('.category__main__cat ul li button');
 const cats = document.querySelectorAll('.category__sub__cat > div');
-
 const cartBtn = document.getElementById('cartButton');
 const expBtn = document.getElementById('exploreButton');
 const profBtn = document.getElementById('profileButton');
