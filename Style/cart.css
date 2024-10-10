@@ -364,7 +364,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 
-.right__container a {
+.right__container button {
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -376,7 +376,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
 }
 
-.right__container a i {
+.right__container button i {
     color: #333;
     margin: 0;
     padding: 0;

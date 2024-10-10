@@ -13,15 +13,15 @@ body {
     background-color: #f5f5f5;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, .slide__description::-webkit-scrollbar {
     width: 5px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track, .slide__description::-webkit-scrollbar-track {
     background-color: rgb(179, 179, 179);
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb, .slide__description::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #333;
 }

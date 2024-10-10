@@ -113,7 +113,6 @@ function loadCartItems() {
             </div>
             <div class="item__description">
                 <h6>${product.title}</h6>
-                <p>${product.description}</p>
                 <div class="total__item__price">
                     <div class="count__container">
                         <button>-</button>

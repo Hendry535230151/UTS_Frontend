@@ -6,17 +6,8 @@ const main = document.getElementById('mainContext');
 const desc = document.getElementById('description');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-const catsButton = document.querySelectorAll('.category__main__cat ul li button');
-const cats = document.querySelectorAll('.category__sub__cat > div');
 const cartBtn = document.getElementById('cartButton');
-const expBtn = document.getElementById('exploreButton');
 const profBtn = document.getElementById('profileButton');
-
-const imageList = [
-    "skincare-makeup-concept-beautiful-asian-female-woman-with-healthy-facial-skin-close-up-portrait-studio-shot.jpg",
-    "image2.jpg",
-    "image3.jpg",
-];
 
 function preloadImages(images) {
     images.forEach(src => {
@@ -28,32 +19,6 @@ function preloadImages(images) {
 document.addEventListener("DOMContentLoaded", function() {
     preloadImages(imageList);
 });
-
-
-buttons.forEach((button) => {
-    button.onclick = function () {
-        buttons.forEach((btn) => {
-            btn.classList.remove('active');
-        });
-        this.classList.add('active');
-        if(this === exploreBtn && exploreBtn.classList.contains('active')) {
-            categoryBx.classList.toggle('hide');
-        }
-        else{
-            categoryBx.classList.add('hide');
-        }
-    }
-});
-
-catsButton.forEach((catBtn, index) => {
-    catBtn.addEventListener('mouseover', () => {
-        cats.forEach(cat => {
-            cat.classList.add('hide');
-        });
-        cats[index].classList.remove('hide');
-    });
-});
-
 
 let isGridVisible = false;
 
@@ -94,14 +59,14 @@ const products__popular = [
 ];
 
 const products__foru = [
-    { id: 1, name: "Nike Socks", description: "Comfortable and durable socks for everyday wear.", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
-    { id: 2, name: "Alexander Watch", description: "Elegant wrist watch for a sophisticated look.", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
-    { id: 3, name: "Ring", description: "Elegant ring made of premium silver, perfect for formal or casual wear.", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
-    { id: 4, name: "Kids Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
-    { id: 5, name: "Gold Necklance", description: "A luxurious necklace made of high-quality materials for a refined look.", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
-    { id: 6, name: "Sketchers Shoes", description: "Trendy sneakers for an active lifestyle, featuring cutting-edge design and comfort.", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
-    { id: 7, name: "Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
-    { id: 8, name: "Skirt", description: "A fashionable skirt, perfect for formal and casual occasions.", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
+    { id: 1, name: "Skirt", description: "A fashionable skirt, perfect for formal and casual occasions.", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
+    { id: 2, name: "Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
+    { id: 3, name: "Sketchers Shoes", description: "Trendy sneakers for an active lifestyle, featuring cutting-edge design and comfort.", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
+    { id: 4, name: "Gold Necklance", description: "A luxurious necklace made of high-quality materials for a refined look.", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
+    { id: 5, name: "Kids Piyama", description: "Comfortable and cozy pajamas for a good night's sleep.", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
+    { id: 6, name: "Ring", description: "Elegant ring made of premium silver, perfect for formal or casual wear.", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
+    { id: 7, name: "Alexander Watch", description: "Elegant wrist watch for a sophisticated look.", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
+    { id: 8, name: "Nike Socks", description: "Comfortable and durable socks for everyday wear.", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
 ];
 const customerRating = [
     { id: 1, name: "human 1232", description: "the best website ever", rating: "5.0", image:"../image/user1.jpg"},
@@ -172,8 +137,8 @@ const descriptions = {
     "young-stylish-macho-boy-black-jacket-posed-outdoor-street-amazing-model-man.jpg": {
         content: "Setiap Pria memiliki cara berbeda dalam hal pemilihan pakaian serta produk-produk yang diperlukan. Namun tidak semua pria dapat memilih produk-produk yang cocok untuk diri sendiri. disini lah kita menyediakan berbagai opsi untuk para pria untuk mengekspresikan gaya mereka sendiri dengan cara yang lebih modern dan lebih nyaman. Di zalora menyediakan fashion yang sesuai untuk pria dimoment apa pun."
     },
-    "jeans2.webp": {
-        content: "Test2"
+    "portrait-young-beautiful-teen-girls.jpg": {
+        content: "Anak-anak adalah sosok yang penuh energi, selalu bergerak, dan siap untuk bermain sepanjang hari. Oleh karena itu, penting bagi mereka untuk mengenakan pakaian yang tidak hanya trendi, tetapi juga nyaman dan fungsional. Kami menawarkan beragam koleksi fashion anak-anak yang dirancang dengan sentuhan ceria, warna-warna segar, dan bahan berkualitas tinggi yang lembut di kulit.Fashion anak-anak di ZALORA mencakup pilihan pakaian kasual untuk aktivitas sehari-hari, hingga pakaian khusus untuk acara-acara spesial. Dengan berbagai motif lucu dan desain yang menggemaskan, koleksi ini mendukung si kecil tampil percaya diri tanpa mengorbankan kenyamanan. Dari piyama yang nyaman untuk tidur malam yang nyenyak, hingga dress dan jaket yang stylish untuk penampilan harian, setiap item kami dirancang untuk memenuhi kebutuhan anak-anak yang aktif dan ceria."
     }
 };
 
