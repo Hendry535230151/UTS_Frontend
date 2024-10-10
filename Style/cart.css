@@ -431,9 +431,10 @@ body::-webkit-scrollbar-thumb {
     min-width: 300px;
     width: 100%;
     height: 400px;
-    border-radius: 50px;
     margin: 10px;
-    border: 1px solid #333; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .container__item {
@@ -512,12 +513,12 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .condition {
         display: none;
     }
 
     .right__navbar a {
-        padding: 0; 
+        margin: 0; 
     }
 }

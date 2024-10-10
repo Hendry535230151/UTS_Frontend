@@ -137,14 +137,14 @@ function loadCartItems() {
 loadCartItems();
 
 const products__popular = [
-    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/socks.webp" },
-    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/watch1.webp" },
-    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/ring1.webp" },
-    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama.webp" },
-    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/necklace.webp" },
-    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/sneakers.webp" },
-    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/piyama1.webp" },
-    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp" },
+    { id: 1, name: "Nike Socks", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 200.000", image: "../Image/socks.webp", link:"product_page.html?id=8"},
+    { id: 2, name: "Alexander Watch", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.000.000", image: "../Image/watch1.webp", link:"product_page.html?id=6"},
+    { id: 3, name: "Ring", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 500.000", image: "../Image/ring1.webp", link:"product_page.html?id=7" },
+    { id: 4, name: "Kids Piyama", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama.webp", link:"product_page.html?id=12" },
+    { id: 5, name: "Gold Necklance", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 3.000.000", image: "../Image/necklace.webp", link:"product_page.html?id=9"},
+    { id: 6, name: "Sketchers Shoes", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 2.550.000", image: "../Image/sneakers.webp", link:"product_page.html?id=4" },
+    { id: 7, name: "Organic Cotton", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 250.000", image: "../Image/piyama1.webp", link:"product_page.html?id=12"},
+    { id: 8, name: "Skirt", description: "This is an item loremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremloremloremloremlooremlorem", price: "Rp. 300.000", image: "../Image/skirt2.webp", link:"product_page.html?id=11"},
 ];
 
 const popular = document.getElementById('popularItem');
